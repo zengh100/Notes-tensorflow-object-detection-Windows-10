@@ -80,6 +80,7 @@ incarnation: 16312293861339221583
 physical_device_desc: "device: 0, name: GeForce GTX 1080, pci bus id: 0000:01:00.0, compute capability: 6.1"
 ```
 If I run on the tensorflowCPU Python environment, it won't list the GPU device.
+
 2. Setting up the Object Detection directory structure and Anaconda Virtual Environment
 	In my case, it requires two more Protobuf files (*.proto) to be compiled: 
 	```
