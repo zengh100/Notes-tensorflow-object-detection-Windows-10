@@ -95,6 +95,9 @@ protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_
 <p>As I don’t want to overwrite the original  directory “inference_graph”, I create a brand-new folder " inference_graph_GPU". Note that I also have my own training directory. So here is command to export inference graph</p>
 <pre><code>python export_inference_graph.py --input_type image_tensor --pipeline_config_path training_GPU/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training_GPU/model.ckpt-200000 --output_directory inference_graph_GPU
 </code></pre>
-<p>After that, I check my folder " inference_graph_GPU" and it</p>
+<p>After that, I check my folder " inference_graph_GPU" and it looks like below:</p>
+<p align="center">
+  <img src="images/frozen_inference_graph.png">
+</p>
 <h3 id="testing-and-using-your-newly-trained-object-detection-classifier">8. Testing and using your newly trained object detection classifier</h3>
 
