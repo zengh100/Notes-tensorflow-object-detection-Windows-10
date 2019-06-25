@@ -81,8 +81,7 @@ protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_
 ```
 </code></pre>
 <h3 id="gathering-and-labeling-pictures">3. Gathering and labeling pictures</h3>
-<pre><code>I didn't make any changes for this practice.
-</code></pre>
+<p>I didn't make any changes for this practice.<p/>
 <h3 id="generating-training-data">4. Generating training data</h3>
 <pre><code>I didn't make any changes for this practice..
 </code></pre>
