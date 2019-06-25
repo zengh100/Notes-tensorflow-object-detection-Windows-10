@@ -69,7 +69,8 @@ physical_device_desc: "device: 0, name: GeForce GTX 1080, pci bus id: 0000:01:00
 </code></pre>
 <p>If I run on the tensorflowCPU Python environment, it won’t list the GPU device.</p>
 <h3 id="setting-up-the-object-detection-directory-structure-and-anaconda-virtual-environment">2. Setting up the Object Detection directory structure and Anaconda Virtual Environment</h3>
-<pre><code>In my case, it requires two more Protobuf files (*.proto) to be compiled: 
+<p>In my case, it requires two more Protobuf files (*.proto) to be compiled: </p>
+<pre><code>
 ```
 flexible_grid_anchor_generator.proto 
 calibration.proto
