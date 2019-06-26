@@ -86,7 +86,10 @@ protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_
 <pre><code>I didn't make any changes for this practice..
 </code></pre>
 <h3 id="creating-a-label-map-and-configuring-training">5. Creating a label map and configuring training</h3>
-<p>I created a new folder “training_GPU” (under "object_detection). and then copied two files (from folder “training” into my new folder: faster_rcnn_inception_v2_pets.config and labelmap.pbtxt.</p>
+<p>I created a new folder “training_GPU” (under "object_detection). and then copied two files (from folder “training” into my new folder): faster_rcnn_inception_v2_pets.config and labelmap.pbtxt. Accordingly, I have to modify file faster_rcnn_inception_v2_pets.config to update this line (two places in the config file) </p>
+</code></pre>
+  label_map_path: "C:/tensorflow1/models/research/object_detection/training_GPU/labelmap.pbtxt"
+</code></pre> 
 <h3 id="run-the-training">6. Run the Training</h3>
 <p>Since I created my own train_dir “training_GPU”, my training cmd line is slightly changed as:</p>
 <pre><code>python train.py --logtostderr --train_dir=training_GPU/ --pipeline_config_path=training_GPU/faster_rcnn_inception_v2_pets.config
