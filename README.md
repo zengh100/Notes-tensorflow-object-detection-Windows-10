@@ -95,7 +95,8 @@ protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_
 <pre><code>python train.py --logtostderr --train_dir=training_GPU/ --pipeline_config_path=training_GPU/faster_rcnn_inception_v2_pets.config
 </code></pre>
 <p>
-The training fished as below:
+The training fished as below: </p>
+<pre><code>
 INFO:tensorflow:global step 199998: loss = 0.0036 (0.152 sec/step)
 INFO:tensorflow:global step 199998: loss = 0.0036 (0.152 sec/step)
 INFO:tensorflow:global step 199999: loss = 0.0074 (0.169 sec/step)
@@ -108,7 +109,8 @@ INFO:tensorflow:Finished training! Saving model to disk.
 INFO:tensorflow:Finished training! Saving model to disk.
 
 (tensorflow) C:\tensorflow1\models\research\object_detection>
-</p>
+</code></pre>
+
 <h3 id="export-inference-graph">7. Export Inference Graph</h3>
 <p>As I don’t want to overwrite the original  directory “inference_graph”, I create a brand-new folder " inference_graph_GPU". Note that I also have my own training directory. So here is command to export inference graph</p>
 <pre><code>python export_inference_graph.py --input_type image_tensor --pipeline_config_path training_GPU/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training_GPU/model.ckpt-200000 --output_directory inference_graph_GPU
