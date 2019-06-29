@@ -103,4 +103,10 @@ protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_
   <img src="images/frozen_inference_graph.png">
 </p>
 <h3 id="testing-and-using-your-newly-trained-object-detection-classifier">8. Testing and using your newly trained object detection classifier</h3>
-
+<p>I made a copy of Object_detection_image.py and named it Object_detection_image_GPU.py where I changed the path of frozen inference graph pointing to my own. Here is my script command to run to detect cards in image test.jpg:  </p>
+<pre><code>
+python Object_detection_image_GPU.py
+</code></pre>
+<p align="center">
+  <img src="images/TestResults.png">
+</p>
